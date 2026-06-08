@@ -1,3 +1,311 @@
-<!--Hola Albert!! Te facilito el enlace a Figma con el ejercicio evaluable:
+<!--Hola Albert!! Te facilito el enlace a Figma:
 
 https://www.figma.com/design/8tzBZ3kvfnEFinJuqsZScS/Sin-t%C3%ADtulo?node-id=0-1&t=aHFddbaKxLkr6JhX-1-->
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tienda de Antigüedades El Siglo</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal"
+      >Saltar al contenido principal</a
+    >
+
+    <header>
+      <nav aria-label="Menú principal de categorías">
+        <div class="nav-logo" aria-hidden="true">🕰️</div>
+        <ul>
+          <li><a href="#mobiliario">Mobiliario</a></li>
+          <li><a href="#joyeria">Joyería y Arte</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#coleccionables">Juguetes y Coleccionables</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="hero" aria-label="Presentación">
+        <h1>Tienda de Antigüedades</h1>
+        <p>
+          Descubre piezas únicas con historia y alma seleccionadas para
+          coleccionistas
+        </p>
+      </section>
+
+      <section class="sobre-nosotros" aria-label="Nuestra historia">
+        <p>
+          Fundada en 1910 como un pequeño taller de restauración en el corazón
+          del casco antiguo, nuestra tienda ha sido el hogar de los apasionados
+          del coleccionismo durante generaciones. Lo que comenzó como una
+          búsqueda personal de piezas únicas se convirtió en un legado familiar
+          dedicado a rescatar y preservar fragmentos del pasado.
+        </p>
+        <p>
+          Hoy, más de un siglo después, mantenemos intacto nuestro compromiso:
+          descubrir objetos con alma y devolverles el lugar que merecen. Desde
+          el mobiliario noble que presenció grandes épocas hasta reliquias
+          cinematográficas, joyas exclusivas y antigüedades nostálgicas, cada
+          pieza de nuestra colección cuenta una historia. Te invitamos a
+          adentrarte en nuestro catálogo y encontrar ese tesoro único que
+          conecte con tu propia historia.
+        </p>
+      </section>
+
+      <section id="colecciones">
+        <h2>Nuestras Colecciones</h2>
+
+        <hr class="linea-decorativa" />
+
+        <div class="categorias-header">
+          <div class="cat-titulo" id="mobiliario"><h3>Mobiliario</h3></div>
+          <div class="cat-titulo" id="joyeria"><h3>Joyería y Arte</h3></div>
+          <div class="cat-titulo" id="multimedia"><h3>Multimedia</h3></div>
+          <div class="cat-titulo" id="coleccionables">
+            <h3>Juguetes y<br />Coleccionables</h3>
+          </div>
+        </div>
+
+        <div class="grid-productos">
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Mobiliario: Silla Barroca"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/silla.png"
+              alt="Silla de estilo barroco ornamentada"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">Silla Barroca</p>
+          </div>
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Joyería y Arte: Anillo Siglo diecisiete"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/anillo.png"
+              alt="Anillo antiguo labrado del siglo diecisiete"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">Anillo S. XVII</p>
+          </div>
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Multimedia: Película de dieciséis milímetros de Star Wars"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/starwars.png"
+              alt="Bobina de película antigua de dieciséis milímetros"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">
+              Película 16mm<br />Star Wars
+            </p>
+          </div>
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Juguetes: Tren de Hojalata vintage"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/tren.png"
+              alt="Locomotora clásica de juguete hecha de hojalata"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">Tren de Hojalata</p>
+          </div>
+        </div>
+
+        <div class="grid-productos">
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Mobiliario: Escritorio Luis Quince"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/mueble.png"
+              alt="Escritorio clásico de madera noble estilo Luis Quince"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">
+              Escritorio<br />Luis XV
+            </p>
+          </div>
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Joyería y Arte: Cruz de Oro del Barroco"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/cruz.png"
+              alt="Cruz relicario de oro con detalles barrocos"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">
+              Cruz de Oro del<br />Barroco
+            </p>
+          </div>
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Multimedia: Póster de Alfons Mucha"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/alfons.png"
+              alt="Lámina decorativa de ilustración modernista de Alfons Mucha"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">
+              Póster<br />Alfons Mucha
+            </p>
+          </div>
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Juguetes: Cromos de Disney de los Años sesenta"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/disney.png"
+              alt="Colección de estampas y cromos vintage de Disney"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">
+              Cromos Disney<br />Años 60
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-productos">
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Mobiliario: Biombo de Madera divisor"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/biombo.png"
+              alt="Biombo clásico de madera tallada de tres cuerpos"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">
+              Biombo<br />de Madera
+            </p>
+          </div>
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Joyería y Arte: Pendientes Modernistas del año mil novecientos diez"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/pendientes.png"
+              alt="Pendientes antiguos de plata estilo modernista"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">
+              Pendientes<br />Modernistas 1910
+            </p>
+          </div>
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Multimedia: Cámara de Cine Bolex H dieciséis"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/camara.png"
+              alt="Cámara cinematográfica analógica clásica sobre trípode"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">
+              Cámara Cine<br />Bolex H16
+            </p>
+          </div>
+          <div
+            class="tarjeta"
+            tabindex="0"
+            aria-label="Categoría Juguetes: Sellos de las Olimpiadas"
+          >
+            <img
+              class="tarjeta-img"
+              src="IMAGENES/olimpiadas.png"
+              alt="Bloque de sellos postales conmemorativos deportivos antiguos"
+            />
+            <div class="tarjeta-overlay"></div>
+            <p class="tarjeta-nombre" aria-hidden="true">Sellos Olimpiadas</p>
+          </div>
+        </div>
+
+        <div class="visually-hidden">
+          <section aria-label="Artículos adicionales de Joyería y Arte">
+            <p>Cuadro payaso óleo</p>
+          </section>
+          <section aria-label="Artículos adicionales de Multimedia">
+            <ul>
+              <li>Proyector de cine super-8 mm</li>
+              <li>Póster película Pulp Fiction</li>
+              <li>Radio de válvulas</li>
+              <li>Discos de vinilo de jazz</li>
+            </ul>
+          </section>
+          <section
+            aria-label="Artículos adicionales de Juguetes y Coleccionables"
+          >
+            <ul>
+              <li>Camión de madera</li>
+              <li>Monedas francesas del siglo diecinueve</li>
+              <li>Juguete radio miniatura</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="botones-ver-mas">
+          <a
+            href="#"
+            class="btn-ver-mas"
+            aria-label="Ver más artículos de la colección Mobiliario"
+            >Ver más</a
+          >
+          <a
+            href="#"
+            class="btn-ver-mas"
+            aria-label="Ver más artículos de la colección Joyería y Arte"
+            >Ver más</a
+          >
+          <a
+            href="#"
+            class="btn-ver-mas"
+            aria-label="Ver más artículos de la colección Multimedia"
+            >Ver más</a
+          >
+          <a
+            href="#"
+            class="btn-ver-mas"
+            aria-label="Ver más artículos de la colección Juguetes y Coleccionables"
+            >Ver más</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
