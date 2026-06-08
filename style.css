@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #f5ede4;
+  color: #2a1f1a;
+  line-height: 1.5;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 15px;
+  padding: 10px 16px;
+  background: white;
+  border: 2px solid #c8a882;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #2a1f1a;
+  text-decoration: none;
+  z-index: 1000;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 15px;
+  outline: 3px solid #2a1f1a;
+}
+
+nav {
+  background-color: #f5ede4;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #8b5e3c;
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
+  padding: 16px 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #2a1f1a;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #ede0d4;
+  outline: 2px solid #8b5e3c;
+}
+
+.hero {
+  position: relative;
+  height: 200px;
+  background:
+    linear-gradient(rgba(60, 30, 10, 0.55), rgba(60, 30, 10, 0.55)),
+    url(IMAGENES/banner.png) center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+.sobre-nosotros {
+  background-color: #faf4ef;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sobre-nosotros p {
+  font-size: 15px;
+  color: #3a2e28;
+}
+
+#colecciones {
+  background-color: #f0e6dc;
+  padding: 40px 30px;
+}
+
+#colecciones h2 {
+  font-size: 15px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #2a1f1a;
+  margin-bottom: 6px;
+}
+
+.linea-decorativa {
+  border: none;
+  height: 1px;
+  background-color: #c8a882;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.categorias-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cat-titulo {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2a1f1a;
+  line-height: 1.5;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tarjeta {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  display: block;
+}
+
+.tarjeta-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.tarjeta:hover .tarjeta-img,
+.tarjeta:focus .tarjeta-img {
+  transform: scale(1.06);
+}
+
+.tarjeta:focus {
+  outline: 3px solid #2a1f1a;
+}
+
+.tarjeta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 60%,
+    transparent 100%
+  );
+}
+
+.tarjeta-nombre {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 8px;
+  line-height: 1.5;
+}
+
+.botones-ver-mas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-ver-mas {
+  display: block;
+  padding: 11px 0;
+  background-color: #c8a882;
+  color: #2a1f1a;
+  border: none;
+  border-radius: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-ver-mas:hover,
+.btn-ver-mas:focus {
+  background-color: #b8926e;
+  outline: 3px solid #2a1f1a;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
